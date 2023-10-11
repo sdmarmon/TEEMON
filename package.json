@@ -1,0 +1,37 @@
+{
+  "name": "TEEMON",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ad": "adb reverse tcp:8081 tcp:8081 & react-native run-android",
+    "flow": "flow",
+    "lint": "eslint --init",
+    "test": "jest"
+  },
+  "dependencies": {
+    "flow": "^0.2.3",
+    "native-base": "^2.4.1",
+    "react": "16.3.1",
+    "react-native": "0.55.2",
+    "react-native-sqlite-storage": "^3.3.4",
+    "react-navigation": "^1.5.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "22.4.3",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.69.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
